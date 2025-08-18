@@ -1,5 +1,8 @@
 # Networking Basics & Key Terminology
----
+~
+## Written By: VINOD N. RATHOD. 
+~
+
 
 ## Core Concepts
 
@@ -77,3 +80,6 @@
 - **PAN** = Personal devices (Bluetooth, hotspot)  
 - **CAN** = University/Company campus  
 - **SAN** = Storage/data management network  
+---
+# THANK YOU!
+#  ~ **V1NNN22** ~

@@ -1,4 +1,7 @@
 # Networking Basics & Key Terminology
+~
+## Written By: VINOD N. RATHOD. 
+~
 
 
 ## Intranet vs. Internet vs. Extranet
@@ -35,3 +38,6 @@
 - **Internet** → Open to **everyone** (global).  
 - **Intranet** → Open to **only employees/students** (internal use).  
 - **Extranet** → Open to **employees + trusted outsiders** (partners, clients).  
+---
+# THANK YOU!
+#  ~ **V1NNN22** ~
