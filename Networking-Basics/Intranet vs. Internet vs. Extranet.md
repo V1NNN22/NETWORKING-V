@@ -34,6 +34,10 @@
 
 ---
 
+<img src="Assets/inter-intra-extra.png" alt="Daigram" width="400"/>
+
+---
+
 ## Quick! 
 - **Internet** → Open to **everyone** (global).  
 - **Intranet** → Open to **only employees/students** (internal use).  

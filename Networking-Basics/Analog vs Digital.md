@@ -42,6 +42,8 @@
 - **Analog Transmission** → Continuous wave, simple but easily affected by noise.  
 - **Digital Transmission** → Binary (0s and 1s), reliable, secure, and used in today’s networks.  
 
+---
+
 <img src="Assets/datatransmission.png" alt="Daigram" width="400"/>
 
 ---
