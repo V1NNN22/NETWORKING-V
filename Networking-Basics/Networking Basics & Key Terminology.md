@@ -71,6 +71,9 @@
 
 ---
 
+<img src="Assets/networks.png" alt="Daigram" width="400"/>
+
+
 ## Summary (Quick Reference)
 
 - **LAN** = Home/Office network  
