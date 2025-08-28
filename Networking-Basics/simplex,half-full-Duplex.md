@@ -36,6 +36,9 @@
 
 ---
 
+<img src="Assets/sd.png" alt="Daigram" width="400"/>
+
+
 ## Quick Comparison  
 - **Simplex:** One-way only → e.g., TV, keyboard  
 - **Half-Duplex:** Two-way, but turn by turn → e.g., walkie-talkie  
