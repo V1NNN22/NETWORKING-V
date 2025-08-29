@@ -45,6 +45,10 @@
 
 ---
 
+<img src="Assets/cast.png" alt="Daigram" width="400"/>
+
+---
+
 ## Quick Comparison  
 - **Unicast** → One sender → One receiver (direct communication)  
 - **Broadcast** → One sender → All receivers (everyone gets it)  
