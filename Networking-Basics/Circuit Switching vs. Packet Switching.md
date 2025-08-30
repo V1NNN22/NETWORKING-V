@@ -43,6 +43,9 @@
 
 ---
 
+<img src="Assets/cp.png" alt="Daigram" width="400"/>
+
+---
 ## Quick Comparison  
 - **Circuit Switching** → Fixed path, dedicated connection, wasteful but reliable (like telephone calls).  
 - **Packet Switching** → Data split into packets, flexible routing, efficient and scalable (like the internet).  
