@@ -5,7 +5,6 @@
 
 ## Circuit Switching vs. Packet Switching  
 
----
 
 ### Circuit Switching  
 - **Definition:** A dedicated communication path (circuit) is established between sender and receiver for the entire duration of communication.  
@@ -43,6 +42,10 @@
 
 ---
 
+
+<img src="Assets/wired.png" alt="Daigram" width="400"/>
+
+---
 ## Quick Comparison  
 - **Circuit Switching** → Fixed path, dedicated connection, wasteful but reliable (like telephone calls).  
 - **Packet Switching** → Data split into packets, flexible routing, efficient and scalable (like the internet).  
