@@ -74,6 +74,9 @@
 
 ---
 
+<img src="Assets/Radio, Microwave, Satellite.png" alt="Daigram" width="400"/>
+
+---
 ## Quick Comparison
 
 * **Radio:** Short-range → Wi-Fi, Bluetooth, FM/AM
