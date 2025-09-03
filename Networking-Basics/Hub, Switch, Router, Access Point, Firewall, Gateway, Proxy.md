@@ -68,6 +68,9 @@
 
 ---
 
+<img src="Assets/network.png" alt="Daigram" width="400"/>
+
+---
 ## Quick Comparison  
 - **Hub:** Basic, sends data to all → Inefficient.  
 - **Switch:** Smarter, sends data to correct device → Efficient.  
