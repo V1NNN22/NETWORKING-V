@@ -39,6 +39,10 @@
 
 ---
 
+<img src="Assets/mac.png" alt="Daigram" width="400"/>
+
+---
+
 ## Key Points (Quick Reference)  
 - **MAC** = Unique hardware address of a device.  
 - **Length** = 48-bit, written in hexadecimal.  
