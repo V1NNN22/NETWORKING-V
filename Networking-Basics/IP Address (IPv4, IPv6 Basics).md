@@ -38,6 +38,10 @@
 
 ---
 
+<img src="Assets/ip.png" alt="Daigram" width="400"/>
+
+---
+
 ## IPv4 vs. IPv6 (Quick Comparison)  
 - **IPv4** → 32-bit, dot-decimal format, ~4.3 billion addresses.  
 - **IPv6** → 128-bit, hexadecimal format, virtually unlimited addresses.  
