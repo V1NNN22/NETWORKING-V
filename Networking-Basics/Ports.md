@@ -46,7 +46,7 @@
 
 ---
 
-![Diagram](Assets/ports.png)  
+![Diagram](Assets/ports.jpg)  
 
 ---
 
