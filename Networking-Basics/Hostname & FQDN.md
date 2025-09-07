@@ -39,7 +39,7 @@
 
 ---
 
-![Diagram](Assets/hostname-fqdn.png)  
+![Diagram](Assets/hostname.webp)  
 
 ---
 
