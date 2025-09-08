@@ -67,7 +67,7 @@
 
 ---
 
-![Diagram](Assets/osi-model.png)  
+![Diagram](Assets/osi.webp)  
 
 ---
 
