@@ -63,11 +63,11 @@
 
 ---
 
-![Diagram](Assets/tcpip-model.png)  
+![Diagram](Assets/tcp.jpg)  
 
 ---
 
 # THANK YOU!  
 # ~ **V1NNN22**  
-```
+
 
