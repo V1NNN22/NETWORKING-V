@@ -79,7 +79,7 @@
 
 ---
 
-![Diagram](Assets/protocols.png)  
+![Diagram](Assets/http.jpeg)  
 
 ---
 
