@@ -1,0 +1,86 @@
+# Other Important Networking Protocols  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## 1. POP3 (Post Office Protocol v3)  
+- **Layer:** Application  
+- **Purpose:** Retrieves emails from mail server → downloads them to client.  
+- **Port:** 110  
+- **Note:** Emails usually removed from server after download.  
+
+---
+
+## 2. IMAP (Internet Message Access Protocol)  
+- **Layer:** Application  
+- **Purpose:** Retrieves and manages emails on mail server (keeps copy on server).  
+- **Port:** 143 (or 993 for secure IMAP over SSL)  
+- **Note:** Preferred over POP3 (synchronizes across devices).  
+
+---
+
+## 3. Telnet  
+- **Layer:** Application  
+- **Purpose:** Provides remote terminal access (plain-text, not secure).  
+- **Port:** 23  
+- **Limitation:** Data is unencrypted → replaced by **SSH**.  
+
+---
+
+## 4. SSH (Secure Shell)  
+- **Layer:** Application  
+- **Purpose:** Secure remote login and command execution.  
+- **Port:** 22  
+- **Use:** Widely used for server administration.  
+
+---
+
+## 5. LDAP (Lightweight Directory Access Protocol)  
+- **Layer:** Application  
+- **Purpose:** Access and manage directory services (like Active Directory).  
+- **Port:** 389 (LDAP), 636 (LDAPS – secure).  
+
+---
+
+## 6. NTP (Network Time Protocol)  
+- **Layer:** Application  
+- **Purpose:** Synchronizes clocks across devices in a network.  
+- **Port:** 123  
+
+---
+
+## 7. ICMP (Internet Control Message Protocol)  
+- **Layer:** Network  
+- **Purpose:** Error reporting & diagnostics (e.g., ping, traceroute).  
+- **Port:** No port (uses **protocol number 1** in IP).  
+
+---
+
+## 8. SIP (Session Initiation Protocol)  
+- **Layer:** Application  
+- **Purpose:** Establishes, manages, and terminates VoIP calls and multimedia sessions.  
+- **Port:** 5060 (unencrypted), 5061 (secure TLS).  
+
+---
+
+## Quick Recap (Ports & Purpose)  
+
+| Protocol | Port(s)    | Purpose |
+|----------|------------|---------|
+| **POP3** | 110        | Download emails from server |
+| **IMAP** | 143 / 993  | Access/manage emails on server |
+| **Telnet** | 23       | Remote access (insecure) |
+| **SSH**  | 22         | Secure remote login |
+| **LDAP** | 389 / 636  | Directory services (users, resources) |
+| **NTP**  | 123        | Time synchronization |
+| **ICMP** | — (Proto 1)| Diagnostics (ping, traceroute) |
+| **SIP**  | 5060 / 5061| VoIP and multimedia sessions |
+
+---
+
+![Diagram](Assets/other-protocols.png)  
+
+---
+
+# THANK YOU!  
+# ~ **V1NNN22**
