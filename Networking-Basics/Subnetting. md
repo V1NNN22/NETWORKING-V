@@ -1,0 +1,81 @@
+# Subnetting Basics  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+---
+
+## 🌐 What is Subnetting?  
+- **Definition:** Subnetting is the process of dividing a **large IP network** into **smaller, more manageable sub-networks (subnets)**.  
+- **Purpose:**  
+  - Efficient **IP address utilization**.  
+  - Improves **network performance & security**.  
+  - Separates **broadcast domains**.  
+- **Layer:** Works at the **Network Layer (Layer 3)** of the OSI model.  
+
+---
+
+## 📌 IP Address Structure (IPv4)  
+- **IPv4 = 32 bits** → written in **dot-decimal notation** (e.g., `192.168.1.1`).  
+- Divided into:  
+  - **Network Portion** → Identifies the network.  
+  - **Host Portion** → Identifies a specific device in that network.  
+
+### 🔑 Subnet Mask  
+- A **32-bit number** that separates the **network portion** from the **host portion**.  
+
+**Example:**
+- IP: 192.168.1.10 Subnet Mask: 255.255.255.0 → /24 (CIDR notation)
+---
+
+## ❓ Why Subnetting?  
+- To divide a **large network** into smaller ones.  
+- To **reduce broadcast traffic**.  
+- To **improve security** (different departments = different subnets).  
+- To make **routing more efficient**.  
+
+---
+
+## 🧮 CIDR Notation  
+- **CIDR (Classless Inter-Domain Routing):** Uses a **suffix** (e.g., `/24`) to show how many bits are reserved for the **network portion**.  
+
+| **CIDR** | **Subnet Mask**     | **Hosts per Subnet** |
+|----------|---------------------|-----------------------|
+| /24      | 255.255.255.0       | 254                   |
+| /25      | 255.255.255.128     | 126                   |
+| /26      | 255.255.255.192     | 62                    |
+| /30      | 255.255.255.252     | 2 (useful for P2P)    |
+
+---
+
+## 📝 Subnetting Example  
+**Given:** `192.168.1.0/24`  
+**Requirement:** 4 subnets.  
+
+**Solution:** Borrow **2 bits** from host portion (`/26`).  
+
+**New Subnets:**  
+- `192.168.1.0/26` → Hosts: 62  
+- `192.168.1.64/26` → Hosts: 62  
+- `192.168.1.128/26` → Hosts: 62  
+- `192.168.1.192/26` → Hosts: 62  
+
+---
+
+## ⚡ Quick Recap (Subnetting Basics)  
+
+| **Concept**   | **Meaning** |
+|---------------|-------------|
+| **Subnetting** | Dividing a network into smaller subnets |
+| **Subnet Mask** | Defines network vs host portion of IP |
+| **CIDR** | Short notation (e.g., `/24 = 255.255.255.0`) |
+| **Benefit** | Efficient IP use, security, performance |
+
+---
+
+![Diagram](Assets/subnetting.png)  
+
+---
+
+# THANK YOU!  
+# ~ **V1NNN22**
