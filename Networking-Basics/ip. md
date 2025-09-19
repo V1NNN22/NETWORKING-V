@@ -1,0 +1,111 @@
+# IP Addresses (IPs) & IP Addressing  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+---
+
+## 🌐 What is an IP Address?  
+- **Definition:** An IP (Internet Protocol) address is a **unique identifier** assigned to each device on a network to enable communication.  
+- **Purpose:**  
+  - Identify devices on a network.  
+  - Enable **routing of data packets**.  
+  - Distinguish between different networks and hosts.  
+- **Layer:** Operates at the **Network Layer (Layer 3)** of the OSI model.  
+
+---
+
+## 🛠️ IP Address Types  
+
+### 1. IPv4  
+- **32-bit address** → dot-decimal notation (e.g., `192.168.1.1`).  
+- Divided into **Network** and **Host** portions.  
+- Supports ~4.3 billion addresses.  
+
+### 2. IPv6  
+- **128-bit address** → hexadecimal (e.g., `2001:0db8::1`).  
+- Designed to solve **IPv4 address exhaustion**.  
+- Supports virtually **unlimited addresses**.  
+
+---
+
+## 🏷️ IP Address Classes (IPv4)  
+
+| Class | Range       | Network/Host Info | Use              |
+|-------|------------|-----------------|----------------|
+| A     | 1–126      | N.H.H.H         | Large networks  |
+| B     | 128–191    | N.N.H.H         | Medium networks |
+| C     | 192–223    | N.N.N.H         | Small networks  |
+| D     | 224–239    | Multicast       | Multicast       |
+| E     | 240–254    | Experimental    | Research        |
+
+---
+
+## 🌍 Public vs Private IPs  
+- **Public IP:** Routable on the internet, globally unique.  
+- **Private IP:** Used within internal networks, not routable on the internet.  
+
+**Private IPv4 Ranges:**  
+- Class A → `10.0.0.0 – 10.255.255.255`  
+- Class B → `172.16.0.0 – 172.31.255.255`  
+- Class C → `192.168.0.0 – 192.168.255.255`  
+
+---
+
+## 🔄 Static vs Dynamic IPs  
+- **Static IP:** Manually assigned, doesn’t change. Useful for **servers**.  
+- **Dynamic IP:** Assigned by **DHCP server**, may change over time. Common for **client devices**.  
+
+---
+
+## 🖥️ What is IP Addressing?  
+- **Definition:** IP addressing is the method of assigning **IP addresses** to devices in a network.  
+- **Purpose:**  
+  - Ensure each device has a **unique address**.  
+  - Facilitate **communication** between devices.  
+  - Enable **proper routing of packets** across networks.  
+
+---
+
+## 🛠️ Methods of IP Address Assignment  
+
+### 1. Manual / Static Assignment  
+- Configured by **network admin**.  
+- Stable and predictable.  
+
+### 2. Dynamic Assignment (DHCP)  
+- Automatically assigns addresses from a **pool**.  
+- Reduces admin effort.  
+- Supports **address reuse**.  
+
+### 3. APIPA (Automatic Private IP Addressing)  
+- Used when **DHCP fails** (`IPv4: 169.254.x.x`).  
+- Enables **basic local communication**.  
+
+---
+
+## 🔗 Subnetting & IP Addressing Connection  
+- Subnetting allows **efficient use of IP addresses**.  
+- Helps in organizing **network IDs** and **host IDs**.  
+- Reduces **broadcast domains** and improves **network performance**.  
+
+---
+
+## ⚡ Quick Recap (IP Addresses & Addressing)  
+
+| Concept             | Meaning |
+|--------------------|---------|
+| **IP Address**       | Unique identifier for network devices |
+| **IPv4 / IPv6**      | Address formats |
+| **Static / Dynamic** | Manual vs automatic assignment |
+| **Private / Public** | Internal vs Internet-routable addresses |
+| **Subnetting**       | Divides IP networks into smaller subnets for efficiency |
+
+---
+
+![Diagram](Assets/ip_addressing.png)  
+
+---
+
+# THANK YOU!  
+# ~ **V1NNN22**
