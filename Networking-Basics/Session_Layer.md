@@ -73,3 +73,5 @@ Written By: Vinod N. Rathod
 ⚡ The Session Layer = **“The layer of communication control”** – It keeps conversations between devices **organized, synchronized, and recoverable.**  
 
 ---
+# ~ V1NNN22 ~ 
+# THANKYOU! 
