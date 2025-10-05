@@ -1,0 +1,76 @@
+# 🎨 OSI Model – Layer 6 (Presentation Layer)
+
+Written By: Vinod N. Rathod  
+
+---
+
+## 📌 What is the Presentation Layer?
+
+- **Definition:**  
+  The Presentation Layer is the **sixth layer** of the OSI model.  
+  It is responsible for **translating, encrypting, and compressing** data so that it can be properly understood by the Application Layer on both the sending and receiving ends.  
+
+- **Purpose:**  
+  Acts as a **translator between the network and the application**.  
+  It ensures that data sent from one system’s application layer can be correctly read by another system’s application layer.  
+
+---
+
+## 🔑 Key Functions of the Presentation Layer
+
+### 1️⃣ Data Translation  
+- Converts data between formats used by the application and the network.  
+- Handles character encoding formats like **ASCII, EBCDIC, Unicode**.  
+
+---
+
+### 2️⃣ Data Encryption & Decryption  
+- Secures data before transmission and decrypts it upon arrival.  
+- **Techniques:** SSL/TLS encryption for secure communication.  
+
+---
+
+### 3️⃣ Data Compression & Decompression  
+- Reduces the size of data for **faster transmission**.  
+- Decompresses data at the receiver end for use.  
+
+---
+
+### 4️⃣ Data Formatting  
+- Defines how data is **structured (syntax and semantics)**.  
+- **Examples:** File formats like **JPEG, MP3, MP4, PDF**, etc.  
+
+---
+
+## 🖥️ Devices / Components Operating at the Presentation Layer  
+- **Gateways**  
+- **Encryption/Decryption devices or software**  
+- **SSL/TLS accelerators**  
+
+---
+
+## 📡 Examples of Presentation Layer Protocols  
+- **SSL (Secure Sockets Layer)**  
+- **TLS (Transport Layer Security)**  
+- **JPEG, GIF, PNG** (for image formatting)  
+- **MPEG, MP3** (for audio/video formatting)  
+- **ASCII, EBCDIC** (for character encoding)  
+
+---
+
+## ⚡ Quick Recap (Presentation Layer in OSI)
+
+| **Aspect** | **Role / Example** |
+|-------------|--------------------|
+| Data Unit | Data |
+| Function | Translation, encryption, compression |
+| Encryption | SSL, TLS |
+| Data Format Examples | JPEG, MP3, ASCII, MPEG |
+| Purpose | Acts as a translator for data formats |
+
+---
+
+### 💡 Key Insight  
+⚡ The Presentation Layer = **“The layer of translation, encryption, and compression”** – It makes sure that data is **readable, secure, and optimized** before reaching the application.  
+
+---
