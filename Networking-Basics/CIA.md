@@ -44,7 +44,7 @@
 
 ---
 
-![CIA Triad Diagram](Assets/cia-triad.png)  
+<img src="Assets/cia.webp" alt="Daigram" width="400"/>
 
 ---
 
