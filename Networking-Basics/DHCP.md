@@ -69,7 +69,7 @@
 
 ---
 
-![Diagram](Assets/dhcp_process.png)  
+<img src="Assets/dhcp.webp" alt="Daigram" width="400"/>
 
 ---
 
