@@ -71,8 +71,9 @@
 
 ---
 
-![Diagram](Assets/bridge-gateway.png)  
+<img src="Assets/bridge.webp" alt="Daigram" width="400"/>
 
+<img src="Assets/gateway.webp" alt="Daigram" width="400"/>
 ---
 
 # THANK YOU!  
