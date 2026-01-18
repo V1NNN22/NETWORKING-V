@@ -1,0 +1,123 @@
+# 🕳️ Zero Trust Reality #6: Monitoring Exists, but Nobody Is Watching
+
+## Written By: VINOD RATHOD 
+
+Every org claims **“full visibility.”**  
+Every breach proves that visibility was **decorative**.
+
+The belief:
+
+> “We log everything. We’ll detect it.”
+
+You *did* log it.  
+You just noticed **three months later** in a breach report written by someone else.
+
+---
+
+## ❌ Why Monitoring Fails in Zero Trust Setups
+
+### 1️⃣ Too Many Signals, Zero Meaning
+
+Zero Trust explodes telemetry:
+
+- Auth logs  
+- Network flows  
+- API calls  
+- Endpoint events  
+- Cloud audit trails  
+
+Teams drown in data and call it security.  
+Noise wins. Signal suffocates.
+
+More logs ≠ more awareness.  
+It usually means less.
+
+---
+
+### 2️⃣ Alerts Are Tuned for Compliance, Not Attackers
+
+Most alerts fire on:
+
+- Login failures  
+- Policy violations  
+- Static thresholds  
+
+Attackers don’t trip those. They:
+
+- Use valid credentials  
+- Stay under limits  
+- Move slowly  
+
+Your SIEM celebrates silence  
+while the house empties.
+
+---
+
+### 3️⃣ Nobody Owns the Alert
+
+When an alert fires:
+
+- Security assumes it’s IT  
+- IT assumes it’s DevOps  
+- DevOps assumes it’s “expected behavior”  
+
+So nothing happens.
+
+Zero Trust becomes **Zero Responsibility**.
+
+---
+
+### 4️⃣ Detection Without Response Is Theater
+
+Even when something is noticed:
+
+- No authority to disable accounts  
+- No confidence to kill sessions  
+- No playbooks that won’t cause outages  
+
+So teams “monitor” the attacker.  
+Politely. Like wildlife photography.
+
+---
+
+## 🧨 The Ugly Truth
+
+Zero Trust doesn’t fail at **prevention**.  
+It fails at **decisive reaction**.
+
+If your system can’t:
+
+- Instantly revoke tokens  
+- Kill active sessions  
+- Isolate identities  
+- Lock down blast radius  
+
+Then monitoring is just **historical documentation of your loss**.
+
+---
+
+## ✅ What Actually Helps (And Yes, It’s Painful)
+
+- Fewer alerts, brutally curated  
+- Behavioral baselines **per identity**  
+- Automatic response for high-confidence abuse  
+- Session-level kill switches  
+- Assume alerts are real until proven otherwise  
+
+False positives are annoying.  
+False negatives are catastrophic.
+
+---
+
+## 🧠 Final Reality Check
+
+Logging everything is easy.  
+Watching the *right* things and acting fast is hard.
+
+If nobody is empowered to pull the plug,  
+your observability stack is just a very expensive diary.
+
+---
+
+## ~ V1NNN22 ~
+## THANKYOU! 
