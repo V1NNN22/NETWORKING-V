@@ -1,0 +1,132 @@
+#  Zero Trust Reality #7: Security Dies the Moment It Gets “Too Expensive”
+
+## Written By: VINOD RATHOD 
+
+Zero Trust looks great until someone opens a spreadsheet.  
+Then it collapses faster than a free VPN.
+
+The belief:
+
+> “Security is a priority.”
+
+Translation:
+
+> “Security is a priority until it slows delivery, annoys users, or costs money.”
+
+So about five minutes.
+
+---
+
+##  How Cost Quietly Murders Zero Trust
+
+###  Partial Zero Trust Is Fake Zero Trust
+
+Organizations implement:
+
+- MFA for admins only  
+- Segmentation for “critical” apps  
+- Monitoring for production, not staging  
+
+Attackers love the gaps.  
+They always start where finance said **“optional.”**
+
+---
+
+###  User Friction Always Wins Budget Fights
+
+If security causes:
+
+- Extra login prompts  
+- Slower apps  
+- Blocked workflows  
+
+It gets “optimized.”
+
+Optimized means **weakened**.  
+Every time. No exceptions.
+
+---
+
+###  Security Tooling Sprawl Eats Itself
+
+Zero Trust stacks turn into a monster:
+
+- IAM tool  
+- PAM tool  
+- CASB  
+- EDR  
+- SIEM  
+- SOAR nobody tuned  
+
+Each renewal chips away budget until leadership asks the dumb question:
+
+> “Can we turn some of this off?”
+
+Yes.  
+And attackers will notice immediately.
+
+---
+
+###  ROI Thinking Is Backwards
+
+Security is judged by:
+
+- “Incidents prevented”  
+- “Alerts reduced”  
+- “Tickets avoided”  
+
+The real metric is:
+
+> **How fast you can stop damage once compromise happens**
+
+That number is rarely measured because it’s uncomfortable.
+
+---
+
+##  The Real Problem
+
+Zero Trust demands **ongoing investment**, not a one-time install.
+
+Boards want:
+
+- One tool  
+- One rollout  
+- One success story  
+
+Zero Trust wants:
+
+- Continuous tuning  
+- Continuous revocation  
+- Continuous skepticism  
+
+Guess which one loses in quarterly planning.
+
+---
+
+##  What Actually Survives Budget Cuts
+
+- Fewer tools, deeply integrated  
+- Strong defaults instead of endless exceptions  
+- Automated enforcement instead of human approval  
+- Clear blast-radius reduction metrics  
+- Treat downtime as cheaper than breach fallout  
+
+If your Zero Trust model collapses when budget tightens,  
+it was **decorative**, not defensive.
+
+---
+
+##  Final Reality Check
+
+Security doesn’t usually fail because attackers are brilliant.  
+It fails because accounting got involved.
+
+Zero Trust that depends on unlimited budget  
+was never Zero Trust.
+
+It was optimism with invoices.
+
+---
+
+## ~ V1NNN22 ~
+## THANKYOU! 
