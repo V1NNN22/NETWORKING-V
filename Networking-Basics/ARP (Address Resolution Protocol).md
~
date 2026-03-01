@@ -1,0 +1,61 @@
+# ARP (Address Resolution Protocol)  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## What is ARP?  
+- **Definition:** A protocol used to map an IP address to a physical MAC address within a local network.  
+- **Purpose:** Enables devices in the same LAN to find the hardware address associated with a known IP → required before actual data transfer at Layer 2.  
+- **Analogy:** Like knowing someone’s name (IP) but needing their house address (MAC) to deliver a package.  
+
+---
+
+## The 4 Steps of ARP Process  
+
+### 1. ARP Request (Step 1)  
+- **Function:** Sender broadcasts a request asking “Who has this IP?”  
+- **Role:** Finds the MAC address for the destination IP.  
+- **Examples:** Broadcast frame to all devices in subnet.  
+
+---
+
+### 2. ARP Reply (Step 2)  
+- **Function:** Device with matching IP responds with its MAC address.  
+- **Role:** Provides required hardware address.  
+- **Examples:** Unicast reply to requesting device.  
+
+---
+
+### 3. ARP Cache Update (Step 3)  
+- **Function:** Sender stores IP-to-MAC mapping locally.  
+- **Role:** Avoids repeating ARP requests for same IP.  
+- **Examples:** `arp -a` command output.  
+
+---
+
+### 4. Frame Transmission (Step 4)  
+- **Function:** Actual data frame sent using resolved MAC address.  
+- **Role:** Enables successful Layer 2 communication.  
+- **Examples:** Ethernet frame delivery.  
+
+---
+
+## Why It Matters  
+- **Essential for LAN Communication:** IP alone cannot deliver frames inside local network.  
+- **Performance Optimization:** ARP caching reduces unnecessary broadcasts.  
+- **Security Insight:** Vulnerable to ARP spoofing / poisoning attacks.  
+
+---
+
+## Quick Recap (Mnemonic)  
+- **Request → Reply → Remember → Route**  
+  - **ARP Request → ARP Reply → Cache → Send Frame**  
+
+---
+
+![Diagram](Assets/arp.webp)  
+
+---
+
+# THANK YOU!  
+# ~ **V1NNN22**
