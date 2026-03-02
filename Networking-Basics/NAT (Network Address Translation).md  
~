@@ -1,0 +1,64 @@
+# NAT (Network Address Translation)  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## What is NAT?  
+- **Definition:** A networking process that modifies IP address information in packet headers while they are in transit across a router.  
+- **Purpose:** Allows multiple devices on a private network to share a single public IP address → conserves IPv4 addresses and adds a layer of abstraction.  
+- **Analogy:** Like an office receptionist sending all outgoing mail under one company address and routing replies back to the correct employee.  
+
+---
+
+## The 4 Steps of NAT Process  
+
+### 1. Private Request (Step 1)  
+- **Function:** Internal device sends packet to external network.  
+- **Role:** Uses private IP which is not routable on the internet.  
+- **Examples:** 192.168.1.10 sending request to google.com.  
+
+---
+
+### 2. NAT Translation (Step 2)  
+- **Function:** Router replaces private IP with its public IP.  
+- **Role:** Tracks mapping in NAT table.  
+- **Examples:** 192.168.1.10 → 49.36.xx.xx.  
+
+---
+
+### 3. Internet Response (Step 3)  
+- **Function:** External server replies to public IP.  
+- **Role:** Response reaches router, not internal device directly.  
+- **Examples:** Website sends response to router’s IP.  
+
+---
+
+### 4. Reverse Mapping (Step 4)  
+- **Function:** Router checks NAT table and forwards packet internally.  
+- **Role:** Restores original private IP destination.  
+- **Examples:** Router sends response back to 192.168.1.10.  
+
+---
+
+## Types of NAT  
+- **Static NAT:** One private IP ↔ one public IP.  
+- **Dynamic NAT:** Pool of public IPs assigned dynamically.  
+- **PAT (Port Address Translation):** Many private IPs share one public IP using port numbers.  
+
+---
+
+## Why It Matters  
+- **IPv4 Conservation:** Reduces need for public IP addresses.  
+- **Basic Security Layer:** Hides internal network structure.  
+- **Network Control:** Enables traffic monitoring and filtering.  
+
+---
+
+## Quick Recap (Mnemonic)  
+- **Send → Translate → Receive → Redirect**  
+  - **Private → Public → Response → Internal**  
+
+---
+
+# THANK YOU!  
+# ~ **V1NNN22**
