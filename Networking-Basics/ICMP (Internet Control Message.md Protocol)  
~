@@ -1,0 +1,69 @@
+# ICMP (Internet Control Message Protocol)  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## What is ICMP?  
+- **Definition:** A network layer protocol used by devices to send error messages and operational information in an IP network.  
+- **Purpose:** Helps diagnose network communication problems → provides feedback when packets cannot reach their destination.  
+- **Analogy:** Like a delivery service sending a notification that a package could not be delivered.  
+
+---
+
+## The 4 Common ICMP Operations  
+
+### 1. Echo Request (Step 1)  
+- **Function:** A device sends a request to check if another device is reachable.  
+- **Role:** Used to test connectivity between hosts.  
+- **Examples:** `ping google.com`.  
+
+---
+
+### 2. Echo Reply (Step 2)  
+- **Function:** Destination device replies confirming it is reachable.  
+- **Role:** Confirms successful communication path.  
+- **Examples:** Ping response packets.  
+
+---
+
+### 3. Destination Unreachable (Step 3)  
+- **Function:** Router or host reports that a destination cannot be reached.  
+- **Role:** Indicates network or routing issue.  
+- **Examples:** No route to host error.  
+
+---
+
+### 4. Time Exceeded (Step 4)  
+- **Function:** Packet TTL expires before reaching destination.  
+- **Role:** Prevents packets from looping indefinitely in network.  
+- **Examples:** Used by `traceroute` command.  
+
+---
+
+## Key ICMP Message Types  
+- **Echo Request / Echo Reply:** Connectivity testing.  
+- **Destination Unreachable:** Network failure notification.  
+- **Time Exceeded:** TTL expiration message.  
+- **Redirect Message:** Router informs host of better route.  
+
+---
+
+## Why It Matters  
+- **Network Troubleshooting:** Essential for debugging connectivity.  
+- **Path Discovery:** Used in traceroute utilities.  
+- **Network Diagnostics:** Helps detect routing failures.  
+
+---
+
+## Quick Recap (Mnemonic)  
+- **Check → Confirm → Report → Expire**  
+  - **Echo Request → Echo Reply → Destination Unreachable → Time Exceeded**  
+
+---
+
+![Diagram](Assets/icmp.webp)  
+
+---
+
+# THANK YOU!  
+# ~ **V1NNN22**
