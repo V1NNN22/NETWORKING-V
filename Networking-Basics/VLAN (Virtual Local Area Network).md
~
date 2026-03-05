@@ -1,0 +1,66 @@
+# VLAN (Virtual Local Area Network)  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## What is VLAN?  
+- **Definition:** A logical network segmentation technique that divides a physical network into multiple isolated broadcast domains.  
+- **Purpose:** Improves network security, performance, and management by separating traffic logically instead of physically.  
+- **Analogy:** Like dividing one office building into separate departments with restricted access.  
+
+---
+
+## The 4 Core VLAN Operations  
+
+### 1. Network Segmentation (Step 1)  
+- **Function:** Switch divides a physical network into multiple virtual networks.  
+- **Role:** Devices in different VLANs are logically separated.  
+- **Examples:** VLAN 10 for HR, VLAN 20 for Finance.  
+
+---
+
+### 2. VLAN Tagging (Step 2)  
+- **Function:** Frames are tagged with VLAN identifiers (VLAN ID).  
+- **Role:** Ensures switches know which VLAN the traffic belongs to.  
+- **Examples:** IEEE 802.1Q tagging.  
+
+---
+
+### 3. Trunk Communication (Step 3)  
+- **Function:** Switch ports carry traffic for multiple VLANs.  
+- **Role:** Enables VLAN communication across switches.  
+- **Examples:** Trunk ports between distribution switches.  
+
+---
+
+### 4. Inter-VLAN Routing (Step 4)  
+- **Function:** Router or Layer 3 switch routes traffic between VLANs.  
+- **Role:** Allows communication across different VLAN segments.  
+- **Examples:** Router-on-a-stick configuration.  
+
+---
+
+## Key VLAN Components  
+- **Access Port:** Connects a device to a single VLAN.  
+- **Trunk Port:** Carries multiple VLANs between switches.  
+- **VLAN ID:** Unique identifier for each VLAN (1–4094).  
+- **Tagging Protocol:** IEEE 802.1Q standard.  
+
+---
+
+## Why It Matters  
+- **Security:** Isolates sensitive departments.  
+- **Performance:** Reduces broadcast traffic.  
+- **Scalability:** Easier network expansion and management.  
+
+---
+
+## Quick Recap (Mnemonic)  
+- **Segment → Tag → Transport → Route**  
+  - **VLAN Creation → Tagging → Trunking → Inter-VLAN Routing**  
+
+
+---
+
+# THANK YOU!  
+# ~ **V1NNN22**
