@@ -1,0 +1,65 @@
+# Load Balancing in Networks  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## What is Load Balancing?  
+- **Definition:** A networking technique that distributes incoming traffic across multiple servers to ensure no single server becomes overloaded.  
+- **Purpose:** Improves availability, reliability, and performance of applications and services.  
+- **Analogy:** Like multiple checkout counters in a supermarket distributing customers to reduce waiting time.  
+
+---
+
+## The 4 Core Steps of Load Balancing  
+
+### 1. Client Request (Step 1)  
+- **Function:** A client sends a request to access a service or application.  
+- **Role:** Request is directed to the load balancer instead of directly to a server.  
+- **Examples:** User accessing a website hosted on multiple servers.  
+
+---
+
+### 2. Traffic Evaluation (Step 2)  
+- **Function:** Load balancer analyzes the incoming request.  
+- **Role:** Determines which backend server should handle the request.  
+- **Examples:** Health checks, current server load analysis.  
+
+---
+
+### 3. Request Distribution (Step 3)  
+- **Function:** Load balancer forwards request to selected server.  
+- **Role:** Ensures balanced traffic across available servers.  
+- **Examples:** Round Robin, Least Connections algorithms.  
+
+---
+
+### 4. Response Delivery (Step 4)  
+- **Function:** Server processes request and sends response back through load balancer.  
+- **Role:** Load balancer returns final response to client.  
+- **Examples:** Web server sending webpage data to user.  
+
+---
+
+## Types of Load Balancing  
+- **Layer 4 Load Balancing:** Operates at transport layer using IP and port information.  
+- **Layer 7 Load Balancing:** Operates at application layer using HTTP headers and content.  
+- **Hardware Load Balancer:** Dedicated appliance handling traffic distribution.  
+- **Software Load Balancer:** Implemented via software solutions.  
+
+---
+
+## Why It Matters  
+- **High Availability:** Prevents single point of failure.  
+- **Scalability:** Supports growing traffic demands.  
+- **Performance Optimization:** Reduces server overload.  
+
+---
+
+## Quick Recap (Mnemonic)  
+- **Receive → Evaluate → Distribute → Deliver**  
+  - **Client → Load Balancer → Server → Response**  
+
+---
+
+# THANK YOU!  
+# ~ **V1NNN22**
