@@ -1,0 +1,65 @@
+# Anycast in Networking  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## What is Anycast?  
+- **Definition:** A network addressing and routing method where the same IP address is assigned to multiple servers in different locations.  
+- **Purpose:** Traffic is automatically routed to the nearest or best-performing server based on routing metrics.  
+- **Analogy:** Like multiple branches of the same bank sharing one contact number, and your call goes to the nearest branch.  
+
+---
+
+## The 4 Core Steps of Anycast Operation  
+
+### 1. Same IP Deployment (Step 1)  
+- **Function:** Multiple servers are configured with the same IP address.  
+- **Role:** Creates distributed service nodes across different geographic locations.  
+- **Examples:** DNS servers deployed globally.  
+
+---
+
+### 2. Route Advertisement (Step 2)  
+- **Function:** Each server advertises the same IP prefix through routing protocols.  
+- **Role:** Routers learn multiple possible paths to the same destination.  
+- **Examples:** BGP announcing the same network prefix.  
+
+---
+
+### 3. Best Path Selection (Step 3)  
+- **Function:** Internet routers determine the closest or most efficient route.  
+- **Role:** User traffic is directed to the nearest server instance.  
+- **Examples:** Routing based on shortest AS path.  
+
+---
+
+### 4. Request Handling (Step 4)  
+- **Function:** The selected server processes the request and responds.  
+- **Role:** Provides faster response and reduced latency.  
+- **Examples:** Content delivery or DNS resolution.  
+
+---
+
+## Where Anycast is Used  
+- **DNS Infrastructure:** Root DNS servers use Anycast globally.  
+- **Content Delivery Networks (CDN):** Improves latency for users.  
+- **DDoS Mitigation:** Traffic distributed across multiple nodes.  
+
+---
+
+## Why It Matters  
+- **Low Latency:** Users connect to nearest server automatically.  
+- **High Availability:** If one server fails, traffic routes to another.  
+- **Scalability:** Easily expand services across global locations.  
+
+---
+
+## Quick Recap (Mnemonic)  
+- **Deploy → Advertise → Select → Serve**  
+  - **Same IP → Routing Announcement → Best Path → Response**  
+
+---
+
+
+# THANK YOU!  
+# ~ **V1NNN22**
