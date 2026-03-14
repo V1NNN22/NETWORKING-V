@@ -1,0 +1,64 @@
+# Packet Switching in Networking  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## What is Packet Switching?  
+- **Definition:** A data transmission method where information is broken into small packets and sent independently across a network.  
+- **Purpose:** Improves efficiency and reliability by allowing packets to take different routes to the destination.  
+- **Analogy:** Like sending a large book in multiple envelopes through different postal routes that get assembled later.  
+
+---
+
+## The 4 Core Steps of Packet Switching  
+
+### 1. Data Segmentation (Step 1)  
+- **Function:** Large data is divided into smaller packets.  
+- **Role:** Makes transmission manageable across network infrastructure.  
+- **Examples:** File transfer broken into packets before transmission.  
+
+---
+
+### 2. Packet Header Attachment (Step 2)  
+- **Function:** Each packet receives a header containing routing information.  
+- **Role:** Includes source IP, destination IP, and sequence number.  
+- **Examples:** IP packet headers.  
+
+---
+
+### 3. Independent Routing (Step 3)  
+- **Function:** Packets travel through different network paths.  
+- **Role:** Routers decide best route dynamically.  
+- **Examples:** Packets moving across multiple routers on the internet.  
+
+---
+
+### 4. Packet Reassembly (Step 4)  
+- **Function:** Destination device reorders and combines packets.  
+- **Role:** Reconstructs original data.  
+- **Examples:** Browser reassembling webpage data.  
+
+---
+
+## Types of Packet Switching  
+- **Datagram Packet Switching:** Each packet routed independently (used by IP).  
+- **Virtual Circuit Packet Switching:** Logical path established before transmission.  
+
+---
+
+## Why It Matters  
+- **Efficient Network Usage:** Multiple communications share same network.  
+- **Fault Tolerance:** Packets reroute if path fails.  
+- **Scalability:** Core technology behind the internet.  
+
+---
+
+## Quick Recap (Mnemonic)  
+- **Split → Label → Route → Rebuild**  
+  - **Segmentation → Header → Path → Reassembly**  
+
+---
+
+
+# THANK YOU!  
+# ~ **V1NNN22**
