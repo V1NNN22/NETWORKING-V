@@ -1,0 +1,64 @@
+# QoS (Quality of Service) in Networking  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## What is QoS?  
+- **Definition:** A set of techniques used to manage and prioritize network traffic to ensure reliable performance for critical applications.  
+- **Purpose:** Controls bandwidth, reduces latency, and prevents packet loss → ensures important traffic gets priority.  
+- **Analogy:** Like giving emergency vehicles priority lanes in traffic over regular vehicles.  
+
+---
+
+## The 4 Core Steps of QoS Operation  
+
+### 1. Traffic Classification (Step 1)  
+- **Function:** Identifies and categorizes network traffic.  
+- **Role:** Distinguishes between types like voice, video, and data.  
+- **Examples:** VoIP packets marked as high priority.  
+
+---
+
+### 2. Traffic Marking (Step 2)  
+- **Function:** Assigns priority levels to packets.  
+- **Role:** Uses fields like DSCP or ToS in IP headers.  
+- **Examples:** Marking streaming traffic as medium priority.  
+
+---
+
+### 3. Traffic Queuing (Step 3)  
+- **Function:** Places packets into different queues based on priority.  
+- **Role:** Ensures high-priority traffic is sent first.  
+- **Examples:** Priority queuing, weighted fair queuing.  
+
+---
+
+### 4. Traffic Scheduling (Step 4)  
+- **Function:** Determines the order of packet transmission.  
+- **Role:** Manages bandwidth allocation and delays.  
+- **Examples:** Low-latency queue for real-time applications.  
+
+---
+
+## QoS Techniques  
+- **Policing:** Limits traffic rate by dropping excess packets.  
+- **Shaping:** Delays packets to smooth traffic flow.  
+- **Queuing Algorithms:** Manage packet transmission order.  
+
+---
+
+## Why It Matters  
+- **Performance:** Ensures smooth operation of real-time apps.  
+- **Bandwidth Optimization:** Prevents congestion.  
+- **User Experience:** Reduces lag in voice and video calls.  
+
+---
+
+## Quick Recap (Mnemonic)  
+- **Classify → Mark → Queue → Schedule**  
+  - **Identify → Prioritize → Organize → Transmit**  
+
+---
+
+# THANK YOU!  
+# ~ **V1NNN22**
