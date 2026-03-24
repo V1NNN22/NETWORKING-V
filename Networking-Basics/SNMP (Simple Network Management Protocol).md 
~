@@ -1,0 +1,66 @@
+# SNMP (Simple Network Management Protocol)  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## What is SNMP?  
+- **Definition:** An application layer protocol used for monitoring and managing network devices such as routers, switches, and servers.  
+- **Purpose:** Allows administrators to collect information, detect issues, and control network devices remotely.  
+- **Analogy:** Like a central control room monitoring all machines in a factory.  
+
+---
+
+## The 4 Core Steps of SNMP Operation  
+
+### 1. Manager Request (Step 1)  
+- **Function:** SNMP Manager sends a request to network device.  
+- **Role:** Queries device for specific information.  
+- **Examples:** Checking CPU usage or interface status.  
+
+---
+
+### 2. Agent Processing (Step 2)  
+- **Function:** SNMP Agent on device receives and processes request.  
+- **Role:** Retrieves required data from device.  
+- **Examples:** Router agent accessing performance metrics.  
+
+---
+
+### 3. Response Delivery (Step 3)  
+- **Function:** Agent sends response back to SNMP Manager.  
+- **Role:** Provides requested data.  
+- **Examples:** Sending bandwidth usage statistics.  
+
+---
+
+### 4. Trap/Alert Generation (Step 4)  
+- **Function:** Device sends unsolicited alerts to manager.  
+- **Role:** Notifies about critical events or failures.  
+- **Examples:** Interface down alert.  
+
+---
+
+## Key SNMP Components  
+- **SNMP Manager:** Central system that monitors devices.  
+- **SNMP Agent:** Software running on network device.  
+- **MIB (Management Information Base):** Database of device parameters.  
+- **OID (Object Identifier):** Unique identifiers for MIB variables.  
+
+---
+
+## Why It Matters  
+- **Network Monitoring:** Tracks performance and health.  
+- **Fault Detection:** Alerts administrators instantly.  
+- **Centralized Control:** Manages multiple devices efficiently.  
+
+---
+
+## Quick Recap (Mnemonic)  
+- **Request → Process → Respond → Alert**  
+  - **Manager → Agent → Data → Trap**  
+
+---
+
+
+# THANK YOU!  
+# ~ **V1NNN22**
