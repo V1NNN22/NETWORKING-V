@@ -1,0 +1,65 @@
+# TLS/SSL Handshake in Networking  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## What is TLS/SSL Handshake?  
+- **Definition:** A process that establishes a secure, encrypted connection between a client and a server before data transmission.  
+- **Purpose:** Ensures confidentiality, integrity, and authentication of communication over the internet.  
+- **Analogy:** Like verifying identity and agreeing on a secret code before starting a private conversation.  
+
+---
+
+## The 4 Core Steps of TLS/SSL Handshake  
+
+### 1. Client Hello (Step 1)  
+- **Function:** Client initiates connection by sending supported protocols and cipher suites.  
+- **Role:** Starts negotiation for secure communication.  
+- **Examples:** TLS version, random number, cipher list.  
+
+---
+
+### 2. Server Hello (Step 2)  
+- **Function:** Server responds with chosen cipher suite and its digital certificate.  
+- **Role:** Provides identity and encryption details.  
+- **Examples:** SSL certificate, public key.  
+
+---
+
+### 3. Key Exchange (Step 3)  
+- **Function:** Client verifies certificate and generates session key.  
+- **Role:** Both sides agree on a shared secret key.  
+- **Examples:** RSA, Diffie-Hellman key exchange.  
+
+---
+
+### 4. Secure Communication (Step 4)  
+- **Function:** Encrypted data transfer begins using session key.  
+- **Role:** Ensures secure and private communication.  
+- **Examples:** HTTPS data transmission.  
+
+---
+
+## Key TLS/SSL Components  
+- **Cipher Suite:** Defines encryption algorithms.  
+- **Public/Private Keys:** Used for secure key exchange.  
+- **Session Key:** Symmetric key used for encryption.  
+- **Certificate Authority (CA):** Verifies server identity.  
+
+---
+
+## Why It Matters  
+- **Data Security:** Protects sensitive information.  
+- **Authentication:** Confirms server identity.  
+- **Integrity:** Prevents data tampering.  
+
+---
+
+## Quick Recap (Mnemonic)  
+- **Hello → Hello → Key → Secure**  
+  - **Client → Server → Exchange → Encrypt**  
+
+---
+
+# THANK YOU!  
+# ~ **V1NNN22**
