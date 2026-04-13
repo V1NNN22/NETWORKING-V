@@ -1,0 +1,64 @@
+# TCP Congestion Control in Networking  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## What is TCP Congestion Control?  
+- **Definition:** A mechanism used by TCP to control the rate of data transmission based on network congestion conditions.  
+- **Purpose:** Prevents network overload, packet loss, and ensures stable data flow.  
+- **Analogy:** Like slowing down traffic during a jam to avoid accidents and chaos.  
+
+---
+
+## The 4 Core Phases of TCP Congestion Control  
+
+### 1. Slow Start (Step 1)  
+- **Function:** Starts transmission with a small congestion window (cwnd).  
+- **Role:** Gradually increases sending rate exponentially.  
+- **Examples:** cwnd doubles every round-trip time (RTT).  
+
+---
+
+### 2. Congestion Avoidance (Step 2)  
+- **Function:** Growth becomes linear after threshold (ssthresh).  
+- **Role:** Prevents sudden congestion.  
+- **Examples:** cwnd increases slowly over time.  
+
+---
+
+### 3. Congestion Detection (Step 3)  
+- **Function:** Detects packet loss via timeout or duplicate ACKs.  
+- **Role:** Signals network congestion.  
+- **Examples:** Triple duplicate ACK triggers fast retransmit.  
+
+---
+
+### 4. Recovery (Step 4)  
+- **Function:** Reduces congestion window and retransmits lost packets.  
+- **Role:** Stabilizes network after congestion event.  
+- **Examples:** Fast recovery or reset to slow start.  
+
+---
+
+## Key Concepts  
+- **cwnd (Congestion Window):** Controls number of packets sent.  
+- **ssthresh (Slow Start Threshold):** Boundary between slow start and avoidance.  
+- **RTT (Round Trip Time):** Time for packet to travel and return.  
+
+---
+
+## Why It Matters  
+- **Network Stability:** Prevents collapse due to overload.  
+- **Efficiency:** Maximizes throughput without congestion.  
+- **Reliability:** Ensures smooth data transmission.  
+
+---
+
+## Quick Recap (Mnemonic)  
+- **Start → Avoid → Detect → Recover**  
+  - **Slow → Linear → Loss → Adjust**  
+
+---
+
+# THANK YOU!  
+# ~ **V1NNN22**
