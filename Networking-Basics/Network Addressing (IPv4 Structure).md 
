@@ -1,0 +1,69 @@
+# Network Addressing (IPv4 Structure)  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## What is IPv4 Addressing?  
+- **Definition:** A system of assigning unique 32-bit addresses to devices on a network for identification and communication.  
+- **Purpose:** Enables devices to locate and communicate with each other across networks.  
+- **Analogy:** Like assigning a unique home address to every house in a city.  
+
+---
+
+## The 4 Core Parts of IPv4 Address  
+
+### 1. Network Portion (Step 1)  
+- **Function:** Identifies the network segment.  
+- **Role:** Determines which network the device belongs to.  
+- **Examples:** In `192.168.1.10/24`, `192.168.1` is network part.  
+
+---
+
+### 2. Host Portion (Step 2)  
+- **Function:** Identifies the specific device within the network.  
+- **Role:** Unique identifier inside that network.  
+- **Examples:** `.10` in `192.168.1.10`.  
+
+---
+
+### 3. Subnet Mask (Step 3)  
+- **Function:** Separates network and host portions.  
+- **Role:** Defines boundary of network.  
+- **Examples:** `255.255.255.0` or `/24`.  
+
+---
+
+### 4. Address Classes (Step 4)  
+- **Function:** Categorizes IP ranges based on size.  
+- **Role:** Defines network size and usage.  
+- **Examples:**  
+  - Class A: Large networks  
+  - Class B: Medium networks  
+  - Class C: Small networks  
+
+---
+
+## Special IP Addresses  
+- **Private IPs:** Used inside local networks (e.g., 192.168.x.x).  
+- **Public IPs:** Used on the internet.  
+- **Loopback:** `127.0.0.1` for self-testing.  
+- **Broadcast:** Sends to all devices in network.  
+
+---
+
+## Why It Matters  
+- **Communication:** Core of device identification.  
+- **Routing:** Helps data reach correct destination.  
+- **Network Design:** Essential for subnetting and planning.  
+
+---
+
+## Quick Recap (Mnemonic)  
+- **Network → Host → Mask → Class**  
+  - **Segment → Device → Boundary → Range**  
+
+---
+
+
+# THANK YOU!  
+# ~ **V1NNN22**
