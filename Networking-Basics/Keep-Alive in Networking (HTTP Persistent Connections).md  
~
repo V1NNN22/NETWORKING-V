@@ -1,0 +1,65 @@
+# Keep-Alive in Networking (HTTP Persistent Connections)  
+~
+## Written By: VINOD N. RATHOD.  
+~
+
+## What is Keep-Alive?  
+- **Definition:** A mechanism that allows multiple HTTP requests and responses to be sent over a single TCP connection instead of creating a new connection each time.  
+- **Purpose:** Reduces connection overhead and improves performance → avoids repeated TCP handshakes.  
+- **Analogy:** Like keeping a phone call active instead of hanging up and dialing again for every sentence.  
+
+---
+
+## The 4 Core Steps of Keep-Alive Operation  
+
+### 1. Initial Connection (Step 1)  
+- **Function:** Client establishes TCP connection with server.  
+- **Role:** Starts communication channel.  
+- **Examples:** Standard TCP handshake.  
+
+---
+
+### 2. Keep-Alive Header (Step 2)  
+- **Function:** Client or server includes `Connection: keep-alive`.  
+- **Role:** Requests to keep connection open.  
+- **Examples:** HTTP/1.1 default behavior.  
+
+---
+
+### 3. Multiple Requests (Step 3)  
+- **Function:** Multiple HTTP requests sent over same connection.  
+- **Role:** Eliminates need for repeated connections.  
+- **Examples:** Loading images, CSS, JS from same server.  
+
+---
+
+### 4. Connection Timeout (Step 4)  
+- **Function:** Connection is closed after inactivity or limit.  
+- **Role:** Frees resources when not in use.  
+- **Examples:** Server timeout after few seconds.  
+
+---
+
+## Key Concepts  
+- **Persistent Connection:** Reuse of single TCP connection.  
+- **Timeout:** Duration connection stays alive.  
+- **Max Requests:** Limit of requests per connection.  
+
+---
+
+## Why It Matters  
+- **Performance:** Faster page loading.  
+- **Efficiency:** Reduces latency and CPU usage.  
+- **Scalability:** Handles multiple requests efficiently.  
+
+---
+
+## Quick Recap (Mnemonic)  
+- **Connect → Keep → Reuse → Close**  
+  - **TCP → Alive → Multiple → Timeout**  
+
+---
+
+
+# THANK YOU!  
+# ~ **V1NNN22**
