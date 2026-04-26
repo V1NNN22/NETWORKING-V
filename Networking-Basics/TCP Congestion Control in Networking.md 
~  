@@ -1,0 +1,66 @@
+# TCP Congestion Control in Networking  
+~  
+## Written By: VINOD N. RATHOD.  
+~  
+
+## What is TCP Congestion Control?  
+- **Definition:** A set of algorithms used by TCP to regulate data transmission speed based on network congestion conditions.  
+- **Purpose:** Prevents overwhelming the network, reduces packet loss, and maintains stable communication.  
+- **Analogy:** Like adjusting vehicle speed automatically when a highway becomes crowded to avoid traffic jams.  
+
+---  
+
+## The 4 Core Steps of TCP Congestion Control Operation  
+
+### 1. Slow Start (Step 1)  
+- **Function:** TCP begins transmission with a small congestion window and increases it rapidly.  
+- **Role:** Tests available network capacity safely.  
+- **Examples:** cwnd doubles every RTT initially.  
+
+---  
+
+### 2. Congestion Avoidance (Step 2)  
+- **Function:** Growth rate slows down after reaching threshold.  
+- **Role:** Prevents sudden overload while still increasing throughput.  
+- **Examples:** cwnd increases linearly instead of exponentially.  
+
+---  
+
+### 3. Loss Detection (Step 3)  
+- **Function:** TCP detects congestion through packet loss, duplicate ACKs, or timeout.  
+- **Role:** Signals that network path is overloaded.  
+- **Examples:** Missing ACK indicates dropped packet.  
+
+---  
+
+### 4. Window Reduction & Recovery (Step 4)  
+- **Function:** TCP reduces congestion window and retransmits lost packets.  
+- **Role:** Relieves congestion and stabilizes the connection.  
+- **Examples:** Fast retransmit and fast recovery.  
+
+---  
+
+## Key Features  
+- **Adaptive Speed Control:** Transmission changes with network state.  
+- **Packet Loss Reduction:** Avoids flooding links.  
+- **Reliable Throughput:** Maintains stable TCP sessions.  
+- **Variants:** Reno, Cubic, BBR.  
+
+---  
+
+## Why It Matters  
+- **Efficiency:** Prevents bandwidth collapse.  
+- **Performance:** Keeps internet communication smooth.  
+- **Fairness:** Shares bandwidth among multiple users.  
+
+---  
+
+## Quick Recap (Mnemonic)  
+- **Start → Avoid → Detect → Recover**  
+  - **Send → Watch → Loss → Adjust**  
+
+---  
+
+
+# THANK YOU!  
+# ~ **V1NNN22**
