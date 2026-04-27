@@ -1,0 +1,66 @@
+# Bufferbloat in Networking  
+~  
+## Written By: VINOD N. RATHOD.  
+~  
+
+## What is Bufferbloat?  
+- **Definition:** A network performance problem caused by excessive buffering of packets inside routers or switches, leading to very high latency and delay.  
+- **Purpose:** Buffers are meant to prevent packet drops, but oversized buffers create long waiting queues.  
+- **Analogy:** Like a toll booth allowing cars to line up endlessly instead of regulating traffic, causing huge delays.  
+
+---  
+
+## The 4 Core Steps of Bufferbloat Operation  
+
+### 1. Traffic Burst (Step 1)  
+- **Function:** Large amount of packets arrive at router faster than link can transmit.  
+- **Role:** Creates initial congestion.  
+- **Examples:** Heavy video upload saturating home internet.  
+
+---  
+
+### 2. Buffer Queue Build-Up (Step 2)  
+- **Function:** Router stores excess packets in memory buffers instead of dropping them.  
+- **Role:** Prevents immediate loss but forms a long queue.  
+- **Examples:** Hundreds of packets waiting in interface buffer.  
+
+---  
+
+### 3. Latency Increase (Step 3)  
+- **Function:** New packets must wait behind queued packets before transmission.  
+- **Role:** Round-trip time increases drastically.  
+- **Examples:** Ping jumps from 20ms to 400ms.  
+
+---  
+
+### 4. Application Degradation (Step 4)  
+- **Function:** Real-time applications suffer delay and jitter.  
+- **Role:** Causes poor user experience despite no packet loss.  
+- **Examples:** Gaming lag, voice call delay, video stutter.  
+
+---  
+
+## Key Features  
+- **High Latency:** Delay increases massively under load.  
+- **Hidden Congestion:** Network seems “connected” but feels slow.  
+- **Queue Saturation:** Oversized buffers hold too many packets.  
+- **Solved By AQM:** Techniques like CoDel/FQ-CoDel reduce it.  
+
+---  
+
+## Why It Matters  
+- **User Experience:** Internet feels sluggish even with bandwidth.  
+- **Real-Time Failure:** VoIP and gaming become unstable.  
+- **Troubleshooting:** Often mistaken for ISP speed issue.  
+
+---  
+
+## Quick Recap (Mnemonic)  
+- **Burst → Buffer → Delay → Degrade**  
+  - **Traffic → Queue → Latency → Apps**  
+
+---  
+
+
+# THANK YOU!  
+# ~ **V1NNN22**
