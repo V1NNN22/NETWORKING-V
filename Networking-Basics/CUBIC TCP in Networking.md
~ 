@@ -1,0 +1,66 @@
+# CUBIC TCP in Networking  
+~  
+## Written By: VINOD N. RATHOD.  
+~  
+
+## What is CUBIC TCP?  
+- **Definition:** A TCP congestion control algorithm that uses a cubic mathematical function to control congestion window growth, optimized for high-bandwidth and long-distance networks.  
+- **Purpose:** Improves throughput recovery after packet loss while maintaining scalability better than older TCP algorithms like Reno.  
+- **Analogy:** Like accelerating a vehicle smoothly based on a calculated curve instead of using simple fixed speed increments.  
+
+---  
+
+## The 4 Core Steps of CUBIC TCP Operation  
+
+### 1. Slow Start Phase (Step 1)  
+- **Function:** Connection begins with rapid congestion window growth.  
+- **Role:** Quickly discovers available network capacity.  
+- **Examples:** Initial exponential cwnd increase.  
+
+---  
+
+### 2. Cubic Growth Phase (Step 2)  
+- **Function:** Congestion window grows according to cubic time-based function.  
+- **Role:** Enables efficient scaling in large networks.  
+- **Examples:** Faster recovery on high-speed WAN links.  
+
+---  
+
+### 3. Congestion Detection (Step 3)  
+- **Function:** Packet loss or congestion signals indicate network overload.  
+- **Role:** Triggers transmission adjustment.  
+- **Examples:** Duplicate ACKs showing dropped packets.  
+
+---  
+
+### 4. Window Reduction & Recovery (Step 4)  
+- **Function:** Congestion window is reduced, then cubic growth resumes.  
+- **Role:** Prevents collapse while restoring throughput efficiently.  
+- **Examples:** Recovering faster than classic Reno.  
+
+---  
+
+## Key Features  
+- **High-Speed Optimization:** Excellent for large bandwidth-delay networks.  
+- **Time-Based Growth:** More scalable than linear increase.  
+- **Efficient Recovery:** Better post-loss throughput restoration.  
+- **Linux Default:** Common modern TCP algorithm.  
+
+---  
+
+## Why It Matters  
+- **Internet Performance:** Widely used in production systems.  
+- **Scalability:** Handles modern fast networks better.  
+- **Efficiency:** Strong throughput with stable congestion handling.  
+
+---  
+
+## Quick Recap (Mnemonic)  
+- **Start → Grow → Detect → Recover**  
+  - **cwnd → Cubic → Loss → Resume**  
+
+---  
+
+
+# THANK YOU!  
+# ~ **V1NNN22**
