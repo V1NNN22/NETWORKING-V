@@ -1,0 +1,66 @@
+# TURN (Traversal Using Relays around NAT) in Networking  
+~  
+## Written By: VINOD N. RATHOD.  
+~  
+
+## What is TURN?  
+- **Definition:** A NAT traversal protocol that relays traffic through an intermediary server when direct peer-to-peer communication fails.  
+- **Purpose:** Ensures connectivity even when strict NAT/firewall conditions block direct communication.  
+- **Analogy:** Like having a trusted middleman pass messages between two people who cannot directly reach each other.  
+
+---  
+
+## The 4 Core Steps of TURN Operation  
+
+### 1. TURN Server Allocation (Step 1)  
+- **Function:** Client requests relay resources from TURN server.  
+- **Role:** Establishes relay session for communication.  
+- **Examples:** WebRTC client allocating TURN relay endpoint.  
+
+---  
+
+### 2. Relay Address Assignment (Step 2)  
+- **Function:** TURN server provides public relay IP and port to client.  
+- **Role:** Creates reachable communication endpoint.  
+- **Examples:** Relay address shared with remote peer.  
+
+---  
+
+### 3. Peer Traffic Redirection (Step 3)  
+- **Function:** Both peers send traffic to TURN relay instead of directly to each other.  
+- **Role:** Bypasses NAT/firewall restrictions.  
+- **Examples:** Corporate firewall blocking UDP hole punching.  
+
+---  
+
+### 4. Relayed Communication Delivery (Step 4)  
+- **Function:** TURN server forwards traffic between both peers continuously.  
+- **Role:** Maintains working communication path.  
+- **Examples:** Video call continuing through relay infrastructure.  
+
+---  
+
+## Key Features  
+- **Guaranteed Connectivity:** Works when direct P2P fails.  
+- **Relay-Based Communication:** Server stays in data path.  
+- **Firewall Friendly:** Helps bypass restrictive environments.  
+- **WebRTC Critical Backup:** Fallback mechanism after STUN failure.  
+
+---  
+
+## Why It Matters  
+- **Reliability:** Communication still works under bad NAT conditions.  
+- **VoIP & Video:** Essential backup for conferencing apps.  
+- **Real-World Networking:** Because ideal direct connectivity is a myth.  
+
+---  
+
+## Quick Recap (Mnemonic)  
+- **Allocate → Assign → Redirect → Relay**  
+  - **Client → TURN → Peer Traffic → Delivery**  
+
+---  
+
+
+# THANK YOU!  
+# ~ **V1NNN22**
