@@ -1,0 +1,66 @@
+# TCP Fast Recovery in Networking  
+~  
+## Written By: VINOD N. RATHOD.  
+~  
+
+## What is TCP Fast Recovery?  
+- **Definition:** A TCP congestion control mechanism that avoids returning to full slow start after packet loss detected via duplicate ACKs.  
+- **Purpose:** Maintains better throughput during packet loss recovery by reducing congestion window intelligently instead of restarting aggressively.  
+- **Analogy:** Like slowing traffic after a minor road issue instead of shutting the entire highway and restarting from scratch.  
+
+---  
+
+## The 4 Core Steps of TCP Fast Recovery Operation  
+
+### 1. Packet Loss Detection (Step 1)  
+- **Function:** Sender detects packet loss through duplicate ACKs.  
+- **Role:** Identifies congestion without timeout.  
+- **Examples:** Three duplicate ACKs received.  
+
+---  
+
+### 2. Fast Retransmit Trigger (Step 2)  
+- **Function:** Missing packet is retransmitted immediately.  
+- **Role:** Starts rapid recovery process.  
+- **Examples:** Lost segment resent instantly.  
+
+---  
+
+### 3. Congestion Window Adjustment (Step 3)  
+- **Function:** Congestion window is reduced, not fully reset.  
+- **Role:** Responds to congestion while preserving throughput.  
+- **Examples:** cwnd cut roughly in half instead of dropping to minimum.  
+
+---  
+
+### 4. Recovery Continuation (Step 4)  
+- **Function:** Data transmission continues with controlled growth.  
+- **Role:** Restores stable communication efficiently.  
+- **Examples:** TCP resumes without full slow-start restart.  
+
+---  
+
+## Key Features  
+- **Efficient Loss Recovery:** Faster than timeout-based restart.  
+- **Throughput Preservation:** Avoids harsh reset penalties.  
+- **Congestion Awareness:** Reacts intelligently to packet loss.  
+- **TCP Reno Core Feature:** Fundamental classic mechanism.  
+
+---  
+
+## Why It Matters  
+- **Performance:** Better recovery under moderate packet loss.  
+- **Bandwidth Efficiency:** Maintains useful transmission rate.  
+- **Protocol Evolution:** Important stepping stone to modern TCP designs.  
+
+---  
+
+## Quick Recap (Mnemonic)  
+- **Detect → Retransmit → Reduce → Continue**  
+  - **Loss → Packet → cwnd → Flow**  
+
+---  
+
+
+# THANK YOU!  
+# ~ **V1NNN22**l
