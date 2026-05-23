@@ -1,0 +1,66 @@
+# FQ-CoDel (Fair Queuing Controlled Delay) in Networking  
+~  
+## Written By: VINOD N. RATHOD.  
+~  
+
+## What is FQ-CoDel?  
+- **Definition:** A queue management algorithm that combines Fair Queuing (FQ) with CoDel to reduce bufferbloat while ensuring fair bandwidth distribution among traffic flows.  
+- **Purpose:** Prevents one heavy flow from monopolizing bandwidth and keeps latency low during congestion.  
+- **Analogy:** Like giving every customer their own checkout line while also ensuring no line becomes painfully slow.  
+
+---  
+
+## The 4 Core Steps of FQ-CoDel Operation  
+
+### 1. Flow Classification (Step 1)  
+- **Function:** Incoming packets are grouped into separate traffic flows.  
+- **Role:** Isolates traffic behavior per flow.  
+- **Examples:** Streaming, gaming, and file download becoming separate queues.  
+
+---  
+
+### 2. Fair Queue Assignment (Step 2)  
+- **Function:** Each flow gets its own logical queue.  
+- **Role:** Prevents bandwidth domination by single aggressive flow.  
+- **Examples:** Large download no longer choking VoIP traffic.  
+
+---  
+
+### 3. CoDel Delay Control (Step 3)  
+- **Function:** CoDel monitors delay inside each flow queue and drops packets when latency grows excessively.  
+- **Role:** Controls bufferbloat independently per flow.  
+- **Examples:** Congested download queue gets regulated.  
+
+---  
+
+### 4. Fair Packet Scheduling (Step 4)  
+- **Function:** Scheduler forwards packets fairly across active queues.  
+- **Role:** Maintains responsiveness and balanced throughput.  
+- **Examples:** Gaming traffic stays smooth during large backup transfer.  
+
+---  
+
+## Key Features  
+- **Fair Bandwidth Sharing:** No single flow domination.  
+- **Bufferbloat Control:** Low latency under load.  
+- **Per-Flow Isolation:** Better traffic behavior separation.  
+- **Modern Queue Management:** Common in Linux traffic shaping.  
+
+---  
+
+## Why It Matters  
+- **Home Internet Quality:** Massive responsiveness improvement.  
+- **Latency-Sensitive Apps:** Better gaming, VoIP, video calls.  
+- **Traffic Fairness:** Stops greedy applications from acting like toddlers.  
+
+---  
+
+## Quick Recap (Mnemonic)  
+- **Classify → Queue → Control → Schedule**  
+  - **Flows → Isolation → Delay → Fairness**  
+
+---  
+
+
+# THANK YOU!  
+# ~ **V1NNN22**
