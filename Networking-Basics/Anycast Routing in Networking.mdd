@@ -1,0 +1,168 @@
+# Anycast Routing in Networking  
+~  
+## Written By: VINOD N. RATHOD.  
+~  
+
+## What is Anycast Routing?  
+- **Definition:** Anycast is a routing method where multiple servers share the same IP address, and traffic is sent to the nearest or best server according to routing protocols.
+- **Purpose:** Improve performance, availability, and redundancy.
+- **Simple Meaning:** One IP address, many servers.
+
+---
+
+## The 4 Core Steps of Anycast
+
+### 1. Same IP Advertisement (Step 1)
+- **Function:** Multiple servers advertise the same IP prefix.
+- **Role:** Create multiple possible destinations.
+
+---
+
+### 2. Route Propagation (Step 2)
+- **Function:** Routers learn multiple paths to the same IP.
+- **Role:** Build routing information.
+
+---
+
+### 3. Best Path Selection (Step 3)
+- **Function:** Routing protocols choose the closest or best path.
+- **Role:** Direct users efficiently.
+
+---
+
+### 4. Traffic Delivery (Step 4)
+- **Function:** User reaches nearest Anycast node.
+- **Result:** Faster response and lower latency.
+
+---
+
+## Why Anycast Exists
+- **Reduce latency**
+- **Increase availability**
+- **Load distribution**
+- **DDoS resilience**
+
+---
+
+## Real-World Example
+
+### User in India
+```text
+Connects to Mumbai Server
+```
+
+### User in Germany
+```text
+Connects to Frankfurt Server
+```
+
+### Same IP
+```text
+8.8.8.8
+```
+
+### Result
+```text
+Nearest server responds
+```
+
+---
+
+## Where Anycast is Used
+
+### DNS Services
+```text
+Google DNS
+Cloudflare DNS
+Root DNS Servers
+```
+
+### CDN Networks
+```text
+Global content delivery
+```
+
+### DDoS Protection
+```text
+Traffic absorbed globally
+```
+
+---
+
+## Benefits
+
+### Performance
+```text
+Lower latency
+```
+
+### Availability
+```text
+Automatic failover
+```
+
+### Scalability
+```text
+Easy global expansion
+```
+
+---
+
+## Detection
+
+### Traceroute
+```bash
+traceroute 8.8.8.8
+```
+
+Different locations may show different paths.
+
+---
+
+### BGP Analysis
+```bash
+show ip bgp
+```
+
+Observe multiple advertisements.
+
+---
+
+## Anycast vs Unicast
+
+### Unicast
+```text
+One IP → One Server
+```
+
+### Anycast
+```text
+One IP → Many Servers
+```
+
+---
+
+## Key Features
+- Shared IP address
+- Multiple locations
+- BGP-based routing
+- Automatic nearest-node selection
+
+---
+
+## Why It Matters
+- **Improves speed**
+- **Increases uptime**
+- **Enhances user experience**
+- **Critical for Internet-scale services**
+
+---
+
+## Quick Recap
+**Advertise → Learn → Select → Deliver**
+**One IP → Many Servers → Best Path → Fast Response**
+
+---
+
+# THANK YOU!
+# ~ **V1NNN22**
