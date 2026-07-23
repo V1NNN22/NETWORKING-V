@@ -1,0 +1,65 @@
+# Locator/Identifier Separation Protocol (LISP) in Networking
+~
+## Written By: VINOD N. RATHOD.
+~
+
+## What is Locator/Identifier Separation Protocol (LISP)?
+- **Definition:** A routing architecture that separates a device's identity (Endpoint Identifier - EID) from its network location (Routing Locator - RLOC).
+- **Purpose:** Makes networks more scalable, simplifies mobility, and enables efficient traffic engineering.
+- **Analogy:** Like having a permanent phone number (Identity) while changing your home address (Location). People still call the same number even if you move to another city.
+
+---
+
+## The 4 Core Steps of LISP Operation
+
+### 1. Endpoint Identification (Step 1)
+- **Function:** A device is assigned an Endpoint Identifier (EID).
+- **Role:** Provides a permanent identity for communication.
+- **Examples:** Laptop receives an EID inside an enterprise network.
+
+---
+
+### 2. Locator Mapping (Step 2)
+- **Function:** A Mapping System associates the EID with a Routing Locator (RLOC).
+- **Role:** Tracks the current network location of the device.
+- **Examples:** EID → RLOC mapping stored in a Map Server.
+
+---
+
+### 3. Packet Encapsulation (Step 3)
+- **Function:** The ingress router encapsulates the original packet with an outer header containing the RLOC.
+- **Role:** Directs the packet toward the correct destination network.
+- **Examples:** Original IP packet is wrapped inside another IP packet.
+
+---
+
+### 4. Packet Delivery (Step 4)
+- **Function:** The egress router removes the outer header and forwards the original packet.
+- **Role:** Delivers traffic to the destination device.
+- **Examples:** User receives data even after changing network locations.
+
+---
+
+## Key Features
+- **Identity-Location Separation:** Decouples addressing from routing.
+- **Supports Mobility:** Devices can move without changing their identity.
+- **Traffic Engineering:** Optimizes routing paths.
+- **Highly Scalable:** Reduces the size of global routing tables.
+
+---
+
+## Why It Matters
+- **Simplifies Network Growth:** Better scalability for large networks.
+- **Supports Cloud & Multi-Site Deployments:** Ideal for modern enterprise architectures.
+- **Improves Routing Efficiency:** Reduces unnecessary routing information.
+
+---
+
+## Quick Recap (Mnemonic)
+- **Identify → Map → Encapsulate → Deliver**
+  - **EID → RLOC → Tunnel → Destination**
+
+---
+
+# THANK YOU!
+# ~ **V1NNN22**
