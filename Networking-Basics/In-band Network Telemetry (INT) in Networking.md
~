@@ -1,0 +1,141 @@
+# In-band Network Telemetry (INT) in Networking
+~
+## Written By: VINOD N. RATHOD.
+~
+
+## What is In-band Network Telemetry (INT)?
+- **Definition:** In-band Network Telemetry (INT) is a technology that allows network devices to collect and embed real-time network information directly into data packets as they travel through the network.
+- **Purpose:** Helps network administrators monitor network performance without sending separate monitoring packets.
+- **Analogy:** Imagine a parcel traveling through five cities. At every city, officials stamp the parcel with the city name, arrival time, and condition. When the parcel reaches its destination, you know exactly what happened during the journey.
+
+---
+
+## Why Was INT Created?
+- **Problem with Traditional Monitoring:** SNMP, NetFlow, and Ping only provide partial information and often detect problems after they occur.
+- **Network Issue:** Modern cloud and AI data centers need real-time visibility.
+- **Solution:** Every switch contributes live information while forwarding packets.
+
+---
+
+## The 4 Core Steps of INT Operation
+
+### 1. Packet Injection (Step 1)
+- **Function:** The sender marks packets for telemetry collection.
+- **Role:** Indicates that network information should be collected.
+- **Example:** A server sends a packet requesting telemetry.
+
+---
+
+### 2. Data Collection (Step 2)
+- **Function:** Every switch adds its own telemetry data.
+- **Role:** Builds a complete journey record.
+- **Example:** Switch A adds queue delay, Switch B adds latency.
+
+---
+
+### 3. Packet Delivery (Step 3)
+- **Function:** The destination receives both the original packet and its telemetry information.
+- **Role:** Provides complete visibility into the packet's journey.
+- **Example:** The receiver knows every switch the packet crossed.
+
+---
+
+### 4. Network Analysis (Step 4)
+- **Function:** Monitoring software analyzes the collected telemetry.
+- **Role:** Detects congestion, delays, and failures instantly.
+- **Example:** Dashboard identifies that Switch C is overloaded.
+
+---
+
+## Components of INT
+
+### 1. Source Device
+- Starts the telemetry process.
+- Marks packets for monitoring.
+
+### 2. Transit Switches
+- Add telemetry information.
+- Record latency, queue depth, utilization, and timestamps.
+
+### 3. Destination Device
+- Receives packets containing telemetry data.
+
+### 4. Monitoring System
+- Analyzes collected information.
+- Displays network health in real time.
+
+---
+
+## Real-Life Example
+
+Suppose a packet travels through:
+
+Server → Switch A → Switch B → Switch C → Database
+
+Each switch records:
+- Processing delay
+- Queue length
+- Port utilization
+- Timestamp
+- Switch ID
+
+When the packet reaches the database, engineers can see exactly where any delay occurred.
+
+---
+
+## Key Features
+- Real-time monitoring.
+- Per-packet visibility.
+- Detects microsecond-level delays.
+- No separate probe packets required.
+- Highly accurate troubleshooting.
+
+---
+
+## Advantages
+- Faster fault detection.
+- Better network visibility.
+- Improves application performance.
+- Reduces troubleshooting time.
+- Ideal for cloud and AI networks.
+
+---
+
+## Limitations
+- Adds extra metadata to packets.
+- Requires INT-capable hardware.
+- Increases processing requirements.
+- Mostly used in modern programmable networks.
+
+---
+
+## Where INT is Used
+- Cloud Data Centers
+- AI Infrastructure
+- High-Performance Computing (HPC)
+- Financial Trading Networks
+- Large Enterprise Networks
+- Software Defined Networks (SDN)
+
+---
+
+## Why It Matters
+- Allows engineers to observe every packet's journey.
+- Makes network troubleshooting significantly easier.
+- Enables predictive maintenance before users notice problems.
+
+---
+
+## Did You Know?
+- INT can detect network delays measured in microseconds, making it valuable for AI clusters and high-frequency trading systems where even tiny delays matter.
+
+---
+
+## Quick Recap (Mnemonic)
+- **Mark → Collect → Deliver → Analyze**
+  - **Packet → Data → Receiver → Dashboard**
+
+---
+
+# THANK YOU!
+# ~ **V1NNN22**
