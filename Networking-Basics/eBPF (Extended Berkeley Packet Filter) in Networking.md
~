@@ -1,0 +1,142 @@
+# eBPF (Extended Berkeley Packet Filter) in Networking
+~
+## Written By: VINOD N. RATHOD.
+~
+
+## What is eBPF?
+- **Definition:** eBPF (Extended Berkeley Packet Filter) is a technology that allows developers to run custom programs safely inside the Linux kernel without modifying the kernel itself.
+- **Purpose:** It enables high-speed networking, security, monitoring, and packet filtering directly inside the operating system.
+- **Analogy:** Imagine a security guard standing at the entrance of a building. Instead of allowing everyone inside before checking them, the guard inspects each person at the entrance. Similarly, eBPF examines packets inside the Linux kernel before they reach applications.
+
+---
+
+## Why Was eBPF Created?
+- **Problem with Traditional Networking:** Most packet processing happens after packets reach user-space applications, which increases CPU usage and latency.
+- **Network Issue:** Modern cloud systems require extremely fast packet inspection and filtering.
+- **Solution:** eBPF processes packets directly inside the Linux kernel, making networking much faster.
+
+---
+
+## The 4 Core Steps of eBPF Operation
+
+### 1. Packet Arrival (Step 1)
+- **Function:** A network packet arrives at the Linux kernel.
+- **Role:** The kernel prepares the packet for processing.
+- **Example:** A web request reaches a Linux server.
+
+---
+
+### 2. eBPF Program Execution (Step 2)
+- **Function:** The kernel runs an attached eBPF program.
+- **Role:** The program analyzes the packet.
+- **Example:** Check the source IP address and destination port.
+
+---
+
+### 3. Decision Making (Step 3)
+- **Function:** The eBPF program decides what to do.
+- **Role:** Allow, block, redirect, modify, or monitor the packet.
+- **Example:** Drop malicious traffic before it reaches the application.
+
+---
+
+### 4. Packet Processing (Step 4)
+- **Function:** The packet continues based on the decision.
+- **Role:** Delivers or discards the packet.
+- **Example:** Forward the request to the web server.
+
+---
+
+## Components of eBPF
+
+### 1. eBPF Program
+- Small program loaded into the Linux kernel.
+- Performs packet analysis and decision-making.
+
+### 2. eBPF Verifier
+- Checks every eBPF program before execution.
+- Prevents unsafe or malicious code from running.
+
+### 3. eBPF Maps
+- Stores information shared between the kernel and user-space.
+- Used for counters, statistics, and configuration.
+
+### 4. Linux Kernel
+- Executes verified eBPF programs at high speed.
+
+---
+
+## Real-Life Example
+
+Suppose a company receives millions of requests every second.
+
+Without eBPF:
+- Every packet reaches the application.
+- The application checks whether it is malicious.
+- CPU usage increases significantly.
+
+With eBPF:
+- The kernel blocks malicious packets immediately.
+- Only legitimate traffic reaches the application.
+- Applications become faster and more efficient.
+
+---
+
+## Key Features
+- Runs inside the Linux kernel.
+- Extremely fast packet processing.
+- Safe execution using the verifier.
+- Programmable without modifying the kernel.
+- Supports networking, security, tracing, and monitoring.
+
+---
+
+## Advantages
+- Very low latency.
+- High performance.
+- Improved security.
+- Flexible and programmable.
+- Reduces application workload.
+
+---
+
+## Limitations
+- Linux-specific technology.
+- Advanced programming knowledge is required.
+- Debugging can be challenging.
+- Some features require newer Linux kernel versions.
+
+---
+
+## Where eBPF is Used
+- Kubernetes Networking
+- Cloud Computing
+- Linux Firewalls
+- Container Networking
+- Security Monitoring
+- Performance Analysis
+- Load Balancers
+
+---
+
+## Why It Matters
+- Makes Linux networking programmable.
+- Enables cloud-scale networking.
+- Powers many modern networking and security platforms.
+- Forms the foundation of next-generation Linux networking.
+
+---
+
+## Did You Know?
+- Technologies like **Cilium** use eBPF to replace traditional iptables, making Kubernetes networking significantly faster and more scalable.
+
+---
+
+## Quick Recap (Mnemonic)
+- **Receive → Execute → Decide → Process**
+  - **Packet → eBPF → Action → Network**
+
+---
+
+# THANK YOU!
+# ~ **V1NNN22**
