@@ -1,0 +1,150 @@
+# Network Service Header (NSH) in Networking
+~
+## Written By: VINOD N. RATHOD.
+~
+
+## What is Network Service Header (NSH)?
+- **Definition:** Network Service Header (NSH) is a protocol that adds a special header to network packets, telling them which network services they must pass through before reaching their destination.
+- **Purpose:** It enables Service Function Chaining (SFC), allowing packets to travel through multiple virtual network services in a specific order.
+- **Analogy:** Imagine visiting a government office where your document must collect stamps from several departments. The NSH header acts like a checklist, ensuring your document visits every required department in the correct order.
+
+---
+
+## Why Was NSH Created?
+- **Problem with Traditional Networking:** Packets follow normal routing paths, making it difficult to force them through security devices in a specific sequence.
+- **Network Issue:** Modern networks use virtual firewalls, intrusion detection systems, and load balancers that need packets to pass through them in order.
+- **Solution:** NSH adds service path information to every packet, guiding it through each required network function.
+
+---
+
+## The 4 Core Steps of NSH Operation
+
+### 1. Service Classification (Step 1)
+- **Function:** Incoming packets are classified based on predefined rules.
+- **Role:** Determines which services the packet requires.
+- **Example:** HTTPS traffic is marked for firewall inspection.
+
+---
+
+### 2. NSH Header Insertion (Step 2)
+- **Function:** A Network Service Header is attached to the packet.
+- **Role:** Stores the service path and current processing stage.
+- **Example:** The packet is instructed to visit the Firewall → IDS → Load Balancer.
+
+---
+
+### 3. Service Function Traversal (Step 3)
+- **Function:** The packet moves through each required virtual service.
+- **Role:** Every service performs its task before forwarding the packet.
+- **Example:** Firewall filters the packet, IDS checks for attacks, and Load Balancer distributes traffic.
+
+---
+
+### 4. Header Removal and Delivery (Step 4)
+- **Function:** After all services are completed, the NSH header is removed.
+- **Role:** The packet continues to its final destination.
+- **Example:** The cleaned and verified packet reaches the application server.
+
+---
+
+## Components of NSH
+
+### 1. Service Classifier
+- Identifies incoming traffic.
+- Decides which service chain to use.
+
+### 2. Service Path Identifier (SPI)
+- Specifies the service chain.
+- Ensures the correct processing sequence.
+
+### 3. Service Index (SI)
+- Tracks which service is currently processing the packet.
+- Decreases after every service.
+
+### 4. Service Functions
+- Virtual devices such as:
+  - Firewall
+  - IDS/IPS
+  - Load Balancer
+  - NAT
+  - WAN Optimizer
+
+---
+
+## Real-Life Example
+
+Suppose a company receives Internet traffic.
+
+Instead of:
+
+Internet → Web Server
+
+The traffic follows:
+
+Internet
+→ Firewall
+→ Intrusion Detection System (IDS)
+→ Load Balancer
+→ Antivirus Scanner
+→ Web Server
+
+NSH ensures every packet follows this exact sequence automatically.
+
+---
+
+## Key Features
+- Service Function Chaining support.
+- Protocol independent.
+- Works with virtual network functions.
+- Flexible packet steering.
+- Supports modern cloud networking.
+
+---
+
+## Advantages
+- Simplifies service deployment.
+- Enables virtual networking.
+- Improves network flexibility.
+- Supports cloud-native infrastructure.
+- Easy to modify service chains.
+
+---
+
+## Limitations
+- Requires NSH-compatible infrastructure.
+- More complex than traditional routing.
+- Limited enterprise deployment.
+- Mostly used in SDN and telecom environments.
+
+---
+
+## Where NSH is Used
+- 5G Core Networks
+- Telecom Infrastructure
+- SDN (Software Defined Networking)
+- NFV (Network Function Virtualization)
+- Cloud Data Centers
+- Enterprise Security Platforms
+
+---
+
+## Why It Matters
+- Makes virtual network services work together automatically.
+- Forms the backbone of modern service chaining.
+- Reduces dependence on dedicated hardware appliances.
+
+---
+
+## Did You Know?
+- Before NSH, changing the order of security devices often required redesigning the network. With NSH, engineers simply modify the service chain without changing the physical network.
+
+---
+
+## Quick Recap (Mnemonic)
+- **Classify → Attach → Process → Deliver**
+  - **Traffic → Header → Services → Destination**
+
+---
+
+# THANK YOU!
+# ~ **V1NNN22**
