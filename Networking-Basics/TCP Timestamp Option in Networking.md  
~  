@@ -1,0 +1,69 @@
+---
+
+# TCP Timestamp Option in Networking  
+~  
+## Written By: VINOD N. RATHOD.  
+~  
+
+## What is TCP Timestamp Option?  
+- **Definition:** TCP Timestamp is a TCP option that allows endpoints to exchange timestamp values in TCP segments.
+- **Purpose:** It primarily helps TCP measure round-trip time (RTT) more accurately and supports the Protection Against Wrapped Sequence numbers (PAWS) mechanism.
+- **Analogy:** Like putting a time stamp on every delivery so the receiver can estimate how long each delivery took and detect outdated packages.
+
+---  
+
+## The 4 Core Steps of TCP Timestamp Operation  
+
+### 1. Timestamp Capability Negotiation  
+- **Function:** TCP endpoints negotiate timestamp support during connection establishment.
+- **Role:** Determines whether timestamps can be included in subsequent TCP segments.
+- **Examples:** A client includes the TCP Timestamp option in its SYN, and the server accepts it in the SYN-ACK.
+
+---  
+
+### 2. Timestamp Exchange  
+- **Function:** Endpoints place timestamp values in TCP segments.
+- **Role:** Each endpoint communicates when a segment was transmitted and echoes the peer's timestamp.
+- **Examples:** A sender transmits a timestamp value, and the receiver returns it as an echoed timestamp.
+
+---  
+
+### 3. RTT Measurement  
+- **Function:** TCP compares transmitted timestamps with echoed timestamps.
+- **Role:** Provides a more direct measurement of the time required for data to travel and receive acknowledgment.
+- **Examples:** TCP can update its retransmission timing estimates using timestamp-based measurements.
+
+---  
+
+### 4. Old Segment Protection  
+- **Function:** TCP can use timestamps to identify stale segments.
+- **Role:** Helps prevent delayed packets from being mistaken for newer packets when sequence numbers wrap around.
+- **Examples:** A segment carrying an older timestamp can be rejected when it violates the PAWS check.
+
+---  
+
+## Key Features  
+- **RTT Measurement:** Helps TCP obtain accurate timing information.
+- **PAWS Support:** Helps protect against wrapped sequence-number confusion.
+- **Low Overhead:** Adds a relatively small amount of information to TCP segments.
+- **Bidirectional Exchange:** Both endpoints can maintain timestamp information.
+
+---  
+
+## Why It Matters  
+- **High-Speed Networks:** Becomes particularly useful when large amounts of data can be transmitted quickly.
+- **Reliable Retransmission:** Better RTT information helps TCP calculate retransmission timing.
+- **Sequence Number Protection:** Reduces the risk of accepting stale segments.
+- **Performance Optimization:** Provides TCP with additional timing information for congestion and reliability mechanisms.
+
+---  
+
+## Quick Recap (Mnemonic)  
+- **N → E → M → P**  
+  - **Negotiate → Exchange → Measure RTT → Protect Sequence Numbers**  
+
+---  
+
+
+# THANK YOU!  
+# ~ **V1NNN22**
