@@ -1,0 +1,69 @@
+---
+
+# BGP RIB Failure in Networking  
+~
+## Written By: VINOD N. RATHOD.
+~
+
+## What is BGP RIB Failure?
+
+- **Definition:** BGP RIB Failure occurs when a BGP route is selected as the best path by BGP but cannot be installed into the main routing table (RIB) because of a conflict or another routing condition.
+- **Purpose:** Understanding RIB failure helps network engineers identify why a BGP route exists in the BGP table but is not being used for normal IP forwarding.
+- **Analogy:** Imagine a company approving an employee for a position, but the employee cannot be added to the official staff register because another entry already occupies that position.
+
+---
+
+## The 4 Core Steps of BGP RIB Failure
+
+### 1. BGP Route Reception (Step 1)
+- **Function:** The router receives a route advertisement from a BGP neighbor.
+- **Role:** Adds the advertised route to BGP's routing information for evaluation.
+- **Examples:** A router learns `203.0.113.0/24` from an external BGP peer.
+
+---
+
+### 2. BGP Best-Path Selection (Step 2)
+- **Function:** BGP evaluates available paths and selects its preferred path according to BGP selection rules.
+- **Role:** Determines which BGP path should normally be considered for installation.
+- **Examples:** A route learned from ISP-A is selected over an alternative route from ISP-B.
+
+---
+
+### 3. Routing Table Installation Attempt (Step 3)
+- **Function:** The router attempts to install the selected BGP route into the main routing table.
+- **Role:** Makes the route available to the forwarding system if no blocking condition prevents installation.
+- **Examples:** The router discovers that a route for the same prefix from another source is already installed and preferred.
+
+---
+
+### 4. RIB Failure Identification (Step 4)
+- **Function:** The router marks or reports the BGP route as a RIB failure when it cannot install that route in the main routing table.
+- **Role:** Helps engineers distinguish BGP best-path selection from the final route installed for forwarding.
+- **Examples:** The BGP table shows a selected route, but the main routing table continues using a preferred static route for the same prefix.
+
+---
+
+## Key Features
+- **Route Installation Status:** Indicates when a selected BGP route is not installed in the main RIB.
+- **Best-Path Visibility:** Helps distinguish the BGP-selected path from the active forwarding route.
+- **Conflict Detection:** Can reveal competition with static, connected, or other routing-protocol routes.
+- **Troubleshooting Support:** Helps explain why a BGP route is present but not actively used for forwarding.
+
+---
+
+## Why It Matters
+- **Routing Diagnosis:** Helps identify why expected BGP routes are missing from the main routing table.
+- **Forwarding Accuracy:** Clarifies which route the router actually uses for a destination.
+- **Policy Verification:** Helps engineers investigate route preference and installation behavior.
+- **Network Stability:** Supports faster troubleshooting of unexpected routing decisions.
+
+---
+
+## Quick Recap (Mnemonic)
+- **Receive → Select → Install → Identify**
+  - **Receive BGP route → Select best path → Attempt RIB installation → Identify installation failure**
+
+---
+
+# THANK YOU!
+# ~ **V1NNN22**
